@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Krishna Patel Portfolio</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI;
+scroll-behavior:smooth;
+}
+
+body{
+
+background:linear-gradient(135deg,#1f2937,#0f2027,#2c5364);
+color:white;
+
+}
+
+/* NAVBAR */
+
+nav{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(10px);
+position:sticky;
+top:0;
+
+}
+
+nav h2{
+
+color:#00e5ff;
+
+}
+
+nav a{
+
+color:white;
+text-decoration:none;
+margin-left:20px;
+font-weight:500;
+transition:.3s;
+
+}
+
+nav a:hover{
+
+color:#00e5ff;
+
+}
+
+/* HERO */
+
+.hero{
+
+text-align:center;
+padding:100px 20px;
+
+animation:fadeIn 2s;
+
+}
+
+.hero img{
+
+width:170px;
+border-radius:50%;
+border:5px solid #00e5ff;
+margin-bottom:20px;
+
+}
+
+.hero h1{
+
+font-size:45px;
+
+}
+
+.hero span{
+
+color:#00e5ff;
+
+}
+
+.hero p{
+
+max-width:600px;
+margin:auto;
+margin-top:15px;
+color:#d1d5db;
+
+}
+
+/* SECTIONS */
+
+section{
+
+padding:80px 10%;
+
+}
+
+h2{
+
+text-align:center;
+margin-bottom:40px;
+color:#00e5ff;
+
+}
+
+/* ABOUT */
+
+.about p{
+
+max-width:700px;
+margin:auto;
+text-align:center;
+line-height:1.8;
+color:#d1d5db;
+
+}
+
+/* SKILLS */
+
+.skills{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+gap:20px;
+
+}
+
+.skill{
+
+background:rgba(255,255,255,0.08);
+padding:25px;
+border-radius:15px;
+text-align:center;
+transition:.4s;
+
+}
+
+.skill:hover{
+
+transform:translateY(-8px);
+background:rgba(0,229,255,0.2);
+
+}
+
+/* PROJECTS */
+
+
+
+
+/* CONTACT */
+
+.contact{
+
+max-width:500px;
+margin:auto;
+
+}
+
+.contact input,
+.contact textarea{
+
+width:100%;
+padding:12px;
+margin-top:10px;
+border:none;
+border-radius:8px;
+
+}
+
+.contact button{
+
+width:100%;
+margin-top:15px;
+padding:12px;
+border:none;
+background:#00e5ff;
+color:black;
+font-weight:bold;
+border-radius:8px;
+cursor:pointer;
+transition:.3s;
+
+}
+
+.contact button:hover{
+
+background:#00bcd4;
+
+}
+
+/* FOOTER */
+
+footer{
+
+text-align:center;
+padding:20px;
+margin-top:50px;
+background:rgba(0,0,0,0.3);
+
+}
+
+/* ANIMATION */
+
+@keyframes fadeIn{
+
+from{
+opacity:0;
+transform:translateY(30px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav>
+
+<h2>Krishna</h2>
+
+<div>
+
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+
+<a href="#contact">Contact</a>
+
+</div>
+
+</nav>
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+<img src="https://uploads.onecompiler.io/44fmq4qs7/44fmq3m67/profile%20.png.jpeg" />
+
+<h1>Hello I'm <span>Krishna Patel</span></h1>
+
+<p>
+Aspiring software developer passionate about learning modern technologies and building real-world applications.
+</p>
+
+</section>
+
+<!-- ABOUT -->
+
+<section id="about">
+
+<h2>About Me</h2>
+
+<div class="about">
+
+<p>
+I am a passionate and motivated developer who enjoys building modern websites and applications. I continuously work on projects to improve my technical and problem-solving skills. My goal is to grow as a professional developer and contribute to impactful software solutions.
+</p>
+
+</div>
+
+</section>
+
+<!-- SKILLS -->
+
+<section id="skills">
+
+<h2>Skills</h2>
+
+<div class="skills">
+
+<div class="skill">HTML</div>
+<div class="skill">CSS</div>
+<div class="skill">JavaScript</div>
+<div class="skill">figma</div>
+
+</div>
+
+</section>
+
+
+
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<h2>Contact Me</h2>
+
+<div class="contact">
+
+<input type="text" id="name" placeholder="Your Name">
+
+<input type="email" id="email" placeholder="Your Email">
+
+<textarea id="message" placeholder="Your Message"></textarea>
+
+<button onclick="sendEmail()">Send Message</button>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 Krishna Patel Portfolio</p>
+
+</footer>
+
+<script>
+
+function sendEmail(){
+
+var name=document.getElementById("name").value;
+var email=document.getElementById("email").value;
+var message=document.getElementById("message").value;
+
+window.location.href=
+"mailto:yourmail@gmail.com?subject=Portfolio Contact from "
++name+
+"&body=Name: "+name+
+"%0AEmail:"+email+
+"%0AMessage:"+message;
+
+}
+
+</script>
+
+</body>
+</html>
+
+
+.
